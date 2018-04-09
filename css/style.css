@@ -1869,3 +1869,16 @@ a img.main-logo{
   width: 100px;
   height: 100px;
 }
+
+.waze-link strong {
+    border: solid;
+    color: white;
+    padding: 0.5em;
+    margin-top: 1em;
+    display: inline-block;
+    border-radius: 1em;
+}
+
+.waze-link a {
+    color: #f0ad4e;
+}
