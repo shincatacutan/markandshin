@@ -1871,7 +1871,7 @@ a img.main-logo{
 }
 
 .waze-link strong {
-    border: solid;
+    border: solid #aaa499 1px;
     color: white;
     padding: 0.5em;
     margin-top: 1em;
