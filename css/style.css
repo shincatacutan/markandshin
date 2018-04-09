@@ -1898,6 +1898,13 @@ span.hashtag {
     left: 100px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     span.hashtag {
+          top: 70px;
+     }
+}
+
 a img.main-logo{
   float: left;
   width: 100px;
