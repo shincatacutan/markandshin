@@ -848,14 +848,14 @@ form label {
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
-  .fh5co-cover .display-tc h1 {
+  .fh5co-cover .display-tc h1,.hashtag {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
-  .fh5co-cover .display-tc h1 {
+  .fh5co-cover .display-tc h1, .hashtag {
     font-size: 30px;
   }
 }
@@ -872,7 +872,41 @@ form label {
   .fh5co-cover .display-tc h2 {
     font-size: 16px;
   }
+
+  .simply-countdown > .simply-section > div {
+    height: 70px !important;
+    width: 70px !important;
 }
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 1.5em !important;
+}
+
+.simply-countdown > .simply-section{
+      height: 70px !important;
+      width: 70px !important;
+}
+}
+
+@media screen and (max-width: 380px) {
+  .hashtag {
+      font-size: 24px;
+    }
+.simply-countdown > .simply-section > div {
+    height: 70px !important;
+    width: 70px !important;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 1.5em !important;
+}
+
+.simply-countdown > .simply-section{
+      height: 70px !important;
+      width: 70px !important;
+}
+}
+
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
@@ -1870,7 +1904,7 @@ a img.main-logo{
   height: 100px;
 }
 
-.waze-link strong {
+.waze-link {
     border: solid #aaa499 1px;
     color: white;
     padding: 0.5em;
@@ -1882,3 +1916,17 @@ a img.main-logo{
 .waze-link a {
     color: #f0ad4e;
 }
+
+/*.simply-section.simply-days-section {
+    background: #8E793E !important;
+} 
+.simply-section.simply-hours-section {
+    background: #AD974F !important;
+}
+.simply-section.simply-minutes-section {
+    background: #d2be51 !important;
+}
+
+.simply-section.simply-seconds-section {
+    background: #a79344 !important;
+}*/
