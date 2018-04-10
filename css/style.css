@@ -90,8 +90,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 40px 0;
+  /*padding: 40px 0;*/
+  background-color: #586777;
   z-index: 1001;
+  height: 100px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -200,7 +202,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
-  padding: 4px 20px;
+  /*padding: 4px 20px;*/
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -1946,6 +1948,10 @@ a img.main-logo{
 
 .waze-link a {
     color: #f0ad4e;
+}
+
+.menu-1 {
+    padding-top: 2em;
 }
 
 /*.simply-section.simply-days-section {
