@@ -694,6 +694,11 @@ nav {
   #fh5co-gallery-list li {
     margin-left: 0;
   }
+
+  img.main-logo{
+    border-bottom: solid;
+    margin-top: -17px;
+  }
 }
 #fh5co-gallery-list li a {
   min-height: 400px;
@@ -873,18 +878,19 @@ form label {
   line-height: 1.5;
   font-family: "Sacramento", Arial, serif;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 800) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1,.hashtag {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1, .hashtag {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1928,9 +1934,15 @@ span.hashtag {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
-     span.hashtag {
-          top: 70px;
-     }
+  span.hashtag {
+    top: 35px;
+  }
+  
+  img.main-logo{
+    margin-top: -38px;
+    height:98px;
+    width: 90px;
+  }
 }
 
 a img.main-logo{
