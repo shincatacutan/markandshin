@@ -62,15 +62,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html"><img class="main-logo" src="images/ms-logo-head.png" alt="logo"/>
+					<div id="fh5co-logo"><a href="index.html"><img class="main-logo" src="images/ms-logo.png"  width="98px" height="98px" alt="logo"/>
 						<span class="hashtag">#markandshinroadtoforever</span></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#">Venue</a></li>
-						<li><a href="#">Reminders</a></li>
-						<li><a href="#">RSVP</a></li>
+						<li><a href="#banner" class="active">Home</a></li>
+						<li><a href="#venue">Venue</a></li>
+						<li><a href="#reminders">Reminders</a></li>
+						<li><a href="#rsvp">RSVP</a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,6 +78,7 @@
 		</div>
 	</nav>
 
+	<section id="banner">
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
@@ -95,7 +96,9 @@
 			</div>
 		</div>
 	</header>
+	</section>
 
+	<section id="the-couple">
 	<div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
@@ -128,7 +131,9 @@
 			</div>
 		</div>
 	</div>
+	</section>
 
+	<section id="venue">
 	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
@@ -212,7 +217,9 @@
 			</div>
 		</div>
 	</div>
+	</section>
 
+	<section id="couple-story">
 	<div id="fh5co-couple-story">
 		<div class="container">
 			<div class="row">
@@ -233,7 +240,7 @@
 									<span class="date">March 7, 2013</span>
 								</div>
 								<div class="timeline-body">
-									<p>In the concrete jungle of Makati City, we met in 2012. We started out as friends then eventually close friends then we had a mutual understanding then voila! we became couples.</p>
+									<p>In the concrete jungle of Makati City, we met in 2012. We started out as friends, then eventually close friends, then we had a mutual understanding then voilà, we became a couple.</p>
 								</div>
 							</div>
 						</li>
@@ -267,7 +274,9 @@
 
 		</div>
 	</div>
+	</section>
 
+	<section id="entourage">
 	<div id="fh5co-gallery" class="fh5co-section-gray">
 		<div class="container">
 			<div class="row">
@@ -280,10 +289,10 @@
 			
 		</div>
 	</div>
-
+	</section>
+    <section id="teaser">
 	<div id="fh5co-services" >
 		<div class="container">
-			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Prenup Teaser</h2>
@@ -298,7 +307,9 @@
 				</div>
 		</div>
 	</div>
+	</section>
 
+	<section id="reminders">
  	<div id="fh5co-testimonial"  class="fh5co-section-gray">
 		<div class="container">
 			<div class="row">
@@ -355,7 +366,9 @@
 			</div>
 		</div>
 	</div>
+	</section>
 
+	<section id="rsvp">
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
@@ -389,6 +402,7 @@
 			</div>
 		</div>
 	</div>
+	</section>
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -457,6 +471,52 @@
         day: d.getDate(),
         enableUtc: false
     });
+
+    // Page Scroll
+jQuery(document).ready(function ($) {
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			|| location.hostname == this.hostname) {
+
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top - 32
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+
+// Fixed Nav
+jQuery(document).ready(function ($) {
+
+
+	$(window).scroll(function(){
+		var scrollTop = 142;
+		if($(window).scrollTop() >= scrollTop){
+			$('nav').css({
+				position : 'fixed',
+				top : '0'
+			});
+			$('nav').css('background-color', 'rgb(159, 132, 85)');
+			//background-image:url(images/gallery-4.jpg);
+		}
+		if($(window).scrollTop() < scrollTop){
+			$('nav').removeAttr('style');	
+		}
+	})
+  
+  // Active Nav Link
+  $('nav ul li a').click(function(){
+         $('nav ul li a').removeClass('active');
+         $(this).addClass('active');
+    });
+})
+
+
 </script>
 
 	</body>

@@ -17,6 +17,7 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+   position: relative;
 }
 
 #page {
@@ -56,6 +57,7 @@ a:hover, a:active, a:focus {
   color: #F14E95;
   outline: none;
   text-decoration: none;
+  
 }
 
 p {
@@ -90,8 +92,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 40px 0;
+  /*padding: 40px 0;*/
+  background-color: transparent;
   z-index: 1001;
+  height: 100px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -200,7 +204,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
-  padding: 4px 20px;
+  /*padding: 4px 20px;*/
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -220,6 +224,30 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li.active > a {
   color: #fff !important;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  ul {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    
+    li {
+      display: inline-block;
+      margin: 0 -4px;
+      padding: 5px 0;
+
+      a {
+        padding: 5px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 #fh5co-counter,
@@ -296,7 +324,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -322,7 +350,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 800px;
   display: table;
   width: 100%;
 }
@@ -1922,6 +1950,10 @@ a img.main-logo{
 
 .waze-link a {
     color: #f0ad4e;
+}
+
+.menu-1 {
+    padding-top: 2em;
 }
 
 /*.simply-section.simply-days-section {
