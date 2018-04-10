@@ -17,7 +17,6 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
-   position: relative;
 }
 
 #page {
@@ -689,6 +688,13 @@ nav {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
+}
+@media screen and (max-width: 768px) {
+
+  img.main-logo{
+    border-bottom: solid;
+    margin-top: -17px;
+  }
 }
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li {
