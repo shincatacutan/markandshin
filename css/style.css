@@ -222,6 +222,30 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  ul {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    
+    li {
+      display: inline-block;
+      margin: 0 -4px;
+      padding: 5px 0;
+
+      a {
+        padding: 5px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
@@ -296,7 +320,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -322,7 +346,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 800px;
   display: table;
   width: 100%;
 }
