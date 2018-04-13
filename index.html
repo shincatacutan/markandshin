@@ -18,10 +18,6 @@
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content="Mark + Shin"/>
 	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -58,7 +54,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
+	<!-- <nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
@@ -76,10 +72,38 @@
 			</div>
 			
 		</div>
-	</nav>
+	</nav> -->
+	
+	<div class="row">
+	  <div class="col-lg-8">
+	    <nav class="navbar navbar-inverse navbar-expand-sm navbar-fixed-top">
+	   
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                                <span class="sr-only">Toggle navigation</span>
+	                                <span class="icon-bar"></span>
+	                                <span class="icon-bar"></span>
+	                                <span class="icon-bar"></span>
+	                            </button>
+	          <div class="col-xs-2 nav-logo">
+					<a href="index.html"><img class="main-logo" src="images/ms-logo.png"  alt="logo"/>
+						<span class="hashtag">#markandshinroadtoforever</span></a>
+				</div>
+
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	          <ul class="nav navbar-nav navbar-right">
+	           <li><a href="#banner" class="active">Home</a></li>
+				<li><a href="#venue">Venue</a></li>
+				<li><a href="#reminders">Reminders</a></li>
+				<li><a href="#rsvp">RSVP</a></li>
+	          </ul>
+	        
+	      </div>
+	    </nav>
+	  </div>
+	</div>
 
 	<section id="banner">
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -252,7 +276,9 @@
 									<span class="date"></span>
 								</div>
 								<div class="timeline-body">
-									<p>We have a consensus -- together, we will travel the world. In span of five years, we've seen different islands of the Philippines. We also travelled different cities in Asia. Soon, we will see Europe and the US(crossfingers). Then cities of Australasia. Then few places in the Middle East. Then Mars. Bye.</p>
+									<p>We love doing a lot of things together. Our normal lazy day means Netflix and chill, K-drama binge-watching or watching videos of 2NE1 and Blackpink. We also play video games for hours til our eyebags drop.</p>
+									<P>We love to eat. Food is life. :) </P><p>
+									And finally, we love to travel. In span of five years, we've seen different islands of the Philippines. We also travelled different cities in Asia. Soon, we will see Europe and the US *crossfingers*. Then cities of Australasia. Then few places in the Middle East. Then Mars and Neptune. Bye.</p>
 								</div>
 							</div>
 						</li>
@@ -330,9 +356,9 @@
 										</figure>
 										<span>Please wear white</span>
 										<blockquote>
-											<p>We are dreaming of <strong>a white beach wedding</strong>. Your compliance is deeply appreciated. </p>
-											<p>Since this is a beach wedding, the dress code is casual. You can wear your favorite tops, dress, rashguard or bikini as long as it's white.  <i class="icon-wink"></i></p></p>
-										</blockquote>
+											<p>We are dreaming of <strong>a white beach wedding</strong>. Your compliance is deeply appreciated. </p></blockquote>
+											<p>The dress code is smart casual. <br/>but you can wear your favorite tops, dress, rashguard or bikini as long as it's <strong>white</strong>.  <i class="icon-wink"></i></p>
+										
 									</div>
 								</div>
 								<div class="item">
@@ -376,7 +402,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<span>RSVP (Répondez s'il vous plaît. Now you know. You're welcome.)</span>
 					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+					<p>Kindly fill-up the form to notify us that you're attending. Thanks.</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -501,11 +527,13 @@ jQuery(document).ready(function ($) {
 				position : 'fixed',
 				top : '0'
 			});
-			$('nav').css('background-color', 'rgb(159, 132, 85)');
+			$('nav').css('background-color', '#222');
+			$('ul.nav.navbar-nav.navbar-right li a').css('color',"#9f8455");
 			//background-image:url(images/gallery-4.jpg);
 		}
 		if($(window).scrollTop() < scrollTop){
 			$('nav').removeAttr('style');	
+			$('ul.nav.navbar-nav.navbar-right li a').removeAttr('style');	
 		}
 	})
   

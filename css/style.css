@@ -100,6 +100,8 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-nav {
     padding: 20px 0;
   }
+
+ 
 }
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
@@ -112,11 +114,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: #fff;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
-    display: none;
-  }
-}
+
 .fh5co-nav ul {
   padding: 0;
   margin: 2px 0 0 0;
@@ -500,6 +498,7 @@ nav {
   .timeline:before {
     margin-left: -64px;
   }
+
 }
 .timeline > li {
   margin-bottom: 20px;
@@ -689,21 +688,14 @@ nav {
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
-@media screen and (max-width: 768px) {
 
-  img.main-logo{
-    border-bottom: solid;
-    margin-top: -17px;
-  }
-}
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li {
     margin-left: 0;
   }
 
   img.main-logo{
-    border-bottom: solid;
-    margin-top: -17px;
+   /* margin-top: -17px;*/
   }
 }
 #fh5co-gallery-list li a {
@@ -889,15 +881,44 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1,.hashtag {
-    font-size: 32px;
+    font-size: 32px !important;
   }
+
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
-  .fh5co-cover .display-tc h1, .hashtag {
-    font-size: 24px;
+  .fh5co-cover .display-tc h1 {
+    font-size: 24px !important;
   }
+
+  .hashtag{
+     font-size: 18px !important;
+  }
+
+  ul.nav.navbar-nav.navbar-right li a {
+   font-size: 10px;
+    padding: 1px;
+    margin-top: 29px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+    float: left;
+    border-radius: 0.5em;
+    color: #fff;
+    background-color: #a48a5d;
+}
+button.navbar-toggle {
+    position: fixed;
+    right: 0;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+    margin-left: 110px;
+}
+
 }
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
@@ -906,46 +927,7 @@ form label {
   line-height: 1.5;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
-  #fh5co-header .display-tc h2,
-  #fh5co-counter .display-tc h2,
-  .fh5co-cover .display-tc h2 {
-    font-size: 16px;
-  }
 
-  .simply-countdown > .simply-section > div {
-    height: 70px !important;
-    width: 70px !important;
-}
-
-.simply-countdown > .simply-section .simply-amount {
-    font-size: 1.5em !important;
-}
-
-.simply-countdown > .simply-section{
-      height: 70px !important;
-      width: 70px !important;
-}
-}
-
-@media screen and (max-width: 380px) {
-  .hashtag {
-      font-size: 24px;
-    }
-.simply-countdown > .simply-section > div {
-    height: 70px !important;
-    width: 70px !important;
-}
-
-.simply-countdown > .simply-section .simply-amount {
-    font-size: 1.5em !important;
-}
-
-.simply-countdown > .simply-section{
-      height: 70px !important;
-      width: 70px !important;
-}
-}
 
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
@@ -1936,16 +1918,19 @@ span.hashtag {
     position: relative;
     top: -70px;
     left: 100px;
+     font-family: "Sacramento", Arial, serif;
+     color:#fff;
+     font-size: 2em;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
   span.hashtag {
-    top: 35px;
+    top: -100;
   }
   
   img.main-logo{
-    margin-top: -38px;
+    margin-top: 10px;
     height:98px;
     width: 90px;
   }
@@ -1970,20 +1955,75 @@ a img.main-logo{
     color: #f0ad4e;
 }
 
-.menu-1 {
-    padding-top: 2em;
+.nav-logo a {
+  height:100px;
+  float:left;
 }
 
-/*.simply-section.simply-days-section {
-    background: #8E793E !important;
-} 
-.simply-section.simply-hours-section {
-    background: #AD974F !important;
-}
-.simply-section.simply-minutes-section {
-    background: #d2be51 !important;
+.nav.navbar-nav.navbar-right {
+    padding: 2em;
+    text-align: right;
 }
 
-.simply-section.simply-seconds-section {
-    background: #a79344 !important;
-}*/
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc h2,
+  #fh5co-counter .display-tc h2,
+  .fh5co-cover .display-tc h2 {
+    font-size: 16px;
+  }
+
+  .simply-countdown > .simply-section > div {
+    height: 70px !important;
+    width: 70px !important;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 1.5em !important;
+}
+
+.simply-countdown > .simply-section{
+      height: 70px !important;
+      width: 70px !important;
+}
+
+ .nav.navbar-nav.navbar-right {
+    padding: 0 !important;
+    text-align: right;
+    margin-top: 2em;
+}
+}
+
+@media screen and (max-width: 380px) {
+  .hashtag {
+      font-size: 24px;
+    }
+.simply-countdown > .simply-section > div {
+    height: 70px !important;
+    width: 70px !important;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 1.5em !important;
+}
+
+.simply-countdown > .simply-section{
+      height: 70px !important;
+      width: 70px !important;
+}
+
+.nav.navbar-nav.navbar-right {
+    padding: 0 ;
+    text-align: right;
+    margin-top: 2em;
+}
+}
+
+.navbar-inverse{
+  background-color:transparent;
+  border:none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border:none;
+}
+
