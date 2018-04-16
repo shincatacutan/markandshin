@@ -1308,7 +1308,7 @@ button.navbar-toggle {
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
   color: #8f989f;
-  font-size: 20px;
+  font-weight: normal;
   line-height: 1.6em;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide.active {
@@ -2072,4 +2072,8 @@ a img.main-logo{
 
 .active{
   font-weight: bold;
+}
+
+.ps-block{
+  font-size: 0.8em;
 }
