@@ -13,9 +13,9 @@
 	<meta name="author" content="goblinsbride" />
 
   	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Mark + Shin -- The Big Day"/>
+	<meta property="og:title" content="Mark + Shin"/>
 	<meta property="og:image" content="images/ms-logo.png"/>
-	<meta property="og:url" content=""/>
+	<meta property="og:url" content="www.markandshin.com"/>
 	<meta property="og:site_name" content="Mark + Shin"/>
 	<meta property="og:description" content=""/>
 
@@ -54,25 +54,6 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<!-- <nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html"><img class="main-logo" src="images/ms-logo.png"  alt="logo"/>
-						<span class="hashtag">#markandshinroadtoforever</span></a></div>
-				</div>
-				<div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li><a href="#banner" class="active">Home</a></li>
-						<li><a href="#venue">Venue</a></li>
-						<li><a href="#reminders">Reminders</a></li>
-						<li><a href="#rsvp">RSVP</a></li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
-	</nav> -->
 	
 	<div class="row">
 	  <div class="col-lg-8">
@@ -408,23 +389,23 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
+					<form class="form-inline" method="post" action="http://localhost:8081/mailservice/">
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<input type="name" class="form-control" name="name" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<input type="email" class="form-control" name="email" placeholder="Email">
 							</div>
 						</div>
 						<div class="col-md-12 col-sm-12">
 							<div class="form-group">
 								<label for="message" class="sr-only">Message</label>
-								<input type="message" class="form-control" id="message" placeholder="Message">
+								<input type="message" class="form-control" name="message" placeholder="Message">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
@@ -486,73 +467,6 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-	<script>
-    var d = new Date(2018, 11, 8, 0,0,0,0);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-
-    // Page Scroll
-jQuery(document).ready(function ($) {
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-			|| location.hostname == this.hostname) {
-
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top - 32
-				}, 1000);
-				return false;
-			}
-		}
-	});
-});
-
-// Fixed Nav
-jQuery(document).ready(function ($) {
-
-
-	$(window).scroll(function(){
-		var scrollTop = 142;
-		if($(window).scrollTop() >= scrollTop){
-			$('nav').css({
-				position : 'fixed',
-				top : '0'
-			});
-			$('nav').css('background-color', '#222');
-			$('ul.nav.navbar-nav.navbar-right li a').css('color',"#9f8455");
-			//background-image:url(images/gallery-4.jpg);
-		}
-		if($(window).scrollTop() < scrollTop){
-			$('nav').removeAttr('style');	
-			$('ul.nav.navbar-nav.navbar-right li a').removeAttr('style');	
-		}
-	})
-  
-  // Active Nav Link
-  $('nav ul li a').click(function(){
-         $('nav ul li a').removeClass('active');
-         $(this).addClass('active');
-    });
-})
-
-
-</script>
 
 	</body>
 </html>
