@@ -2,7 +2,7 @@
 	
 	'use strict';
 
- var d = new Date(2018, 11, 8, 0,0,0,0);
+ 	var d = new Date(2018, 11, 8, 0,0,0,0);
 
     // default example
 	simplyCountdown('.simply-countdown-one', {
@@ -18,6 +18,11 @@
 		day: d.getDate(),
 		enableUtc: false
 	});
+
+	$('#entoTab a').click(function (e) {
+	    e.preventDefault()
+	    $(this).tab('show')
+	})
 
     // Page Scroll
 	jQuery(document).ready(function ($) {

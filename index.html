@@ -291,7 +291,108 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>The best people around us</span>
 					<h2>Wedding Sponsors and Entourage</h2>
-					<p>Names will be revealed soon</p>
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs nav-justified" id="entoTab" role="tablist">
+					    <li class="nav-item">
+					        <a class="nav-link" data-toggle="tab" href="#panel1" role="tab">Bride's maids</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Groom's men</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Principal Sponsors</a>
+					    </li>
+					</ul>
+					<!-- Tab panels -->
+					<div class="tab-content card">
+					    <!--Panel 1-->
+					    <div class="tab-pane fade in active" id="panel1" role="tabpanel">
+					    	 <ul class="entourage-list">
+					       		<li class="entourage-item">
+					       			<img src="images/placeholder-woman.png" class="rounded-circle" height="100px" width="100px">
+					       			<span class="item-name">Iana</span>
+					       			<span class="item-role">Matron of Honor</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+					       		<li class="entourage-item">
+					       			<img src="images/placeholder-woman.png" class="rounded-circle" height="100px" width="100px">
+					       			<span class="item-name">Tenten</span>
+					       			<span class="item-role">Gorgeous BM#1</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+								<li class="entourage-item">
+									<img src="images/placeholder-woman.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Thea</span>
+					       			<span class="item-role">Gorgeous BM#2</span>
+					       			<span class="item-desc">description here</span>
+								</li>
+								<li class="entourage-item">
+									<img src="images/placeholder-woman.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Maye</span>
+					       			<span class="item-role">Gorgeous BM#3</span>
+					       			<span class="item-desc">description here</span></li>
+								<li class="entourage-item">
+									<img src="images/placeholder-woman.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Diana</span>
+					       			<span class="item-role">Gorgeous BM#4</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+								<li class="entourage-item">
+									<img src="images/placeholder-woman.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Maylet</span>
+					       			<span class="item-role">Gorgeous BM#5</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+					       </ul>
+					    </div>
+					    <!--/.Panel 1-->
+					    <!--Panel 2-->
+					    <div class="tab-pane fade" id="panel2" role="tabpanel">
+					       <ul class="entourage-list">
+					       		<li class="entourage-item">
+					       			<img src="images/placeholder-man.png" class="rounded-circle" height="100px" width="100px">
+					       			<span class="item-name">Arvin</span>
+					       			<span class="item-role">Best Man</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+					       		<li class="entourage-item">
+					       			<img src="images/placeholder-man.png" class="rounded-circle" height="100px" width="100px">
+					       			<span class="item-name">Kevin</span>
+					       			<span class="item-role">Dashing GM#1</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+								<li class="entourage-item">
+									<img src="images/placeholder-man.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Peter</span>
+					       			<span class="item-role">Dashing GM#2</span>
+					       			<span class="item-desc">description here</span>
+								</li>
+								<li class="entourage-item">
+									<img src="images/placeholder-man.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Oliver</span>
+					       			<span class="item-role">Dashing GM#3</span>
+					       			<span class="item-desc">description here</span></li>
+								<li class="entourage-item">
+									<img src="images/placeholder-man.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Joel</span>
+					       			<span class="item-role">Dashing GM#4</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+								<li class="entourage-item">
+									<img src="images/placeholder-man.png" class="rounded-circle" height="100px" width="100px">
+									<span class="item-name">Dante</span>
+					       			<span class="item-role">Dashing GM#5</span>
+					       			<span class="item-desc">description here</span>
+					       		</li>
+					       </ul>
+					    </div>
+					    <!--/.Panel 2-->
+					    <!--Panel 3-->
+					    <div class="tab-pane fade" id="panel3" role="tabpanel">
+					    	 <p>Names to be revealed soon! </p>
+					    </div>
+					    <!--/.Panel 3-->
+					</div>
 				</div>
 			</div>
 			
@@ -389,23 +490,23 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline" method="post" action="http://localhost:8081/mailservice/">
+					<form class="form-inline" method="post" id="sendRSVP">
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" name="name" placeholder="Name">
+								<input type="name" class="form-control" name="name" id="name" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" name="email" placeholder="Email">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Email">
 							</div>
 						</div>
 						<div class="col-md-12 col-sm-12">
 							<div class="form-group">
 								<label for="message" class="sr-only">Message</label>
-								<input type="message" class="form-control" name="message" placeholder="Message">
+								<input type="message" class="form-control" name="message" id="message" placeholder="Message">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
@@ -468,6 +569,33 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
+	<script type="text/javascript">
+		
+		$("#sendRSVP").on("submit", function(event){
+			var data = {
+				name: $("#name").val(),
+				email: $("#email").val(),
+				message: $("#message").val()
+			};
+			$.ajax({
+			  type: "POST",
+			  url: "http://localhost:8888/mailservice",
+			  data: data,
+			  cache: false,
+			  success: function(data){
+			    console.log(data);
+			    alert("Thanks for responding! See you soon.");
+			    $("#sendRSVP")[0].reset();
+			  },
+			  fail: function(e){
+			  	console.log(e);
+			  	alert("Sorry, can't connect to the awesome server right now. :(");
+			  }
+			});
+
+			event.preventDefault();
+		})
+	</script>
 	</body>
 </html>
 

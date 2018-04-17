@@ -2077,3 +2077,34 @@ a img.main-logo{
 .ps-block{
   font-size: 0.8em;
 }
+
+li.entourage-item {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 16.66%;
+}
+
+span.item-name {
+    font-family: Sacramento;
+    text-transform: none;
+    color: #9f8455;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 100%;
+}
+
+span.item-desc {
+    text-transform: none;
+    font-weight: normal;
+    font-style: italic;
+}
+
+ul.entourage-list {
+    margin: 0;
+    padding: 0;
+}
+.tab-pane{
+  margin-top:2em;
+}
