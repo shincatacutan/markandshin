@@ -583,6 +583,34 @@ nav {
     height: 60px;
     margin-left: -20px !important;
   }
+
+  span.item-role {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  span.item-name {
+    font-family: Sacramento;
+    text-transform: none;
+    color: #9f8455;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+  }
+  span.item-desc {
+    text-transform: none;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px;
+  }
+  li.entourage-item {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 33%;
+}
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -2107,4 +2135,40 @@ ul.entourage-list {
 }
 .tab-pane{
   margin-top:2em;
+}
+
+@media screen and (max-width: 480px) {
+  .timeline > li > .timeline-badge {
+    width: 60px;
+    height: 60px;
+    margin-left: -20px !important;
+  }
+
+  span.item-role {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  span.item-name {
+    font-family: Sacramento;
+    text-transform: none;
+    color: #9f8455;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+  }
+  span.item-desc {
+    text-transform: none;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px;
+  }
+  li.entourage-item {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 33%;
+  }
 }
