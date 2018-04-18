@@ -2171,4 +2171,22 @@ ul.entourage-list {
     float: left;
     width: 33%;
   }
+
+  .nav-justified > li, .nav-tabs.nav-justified > li {
+    float: left;
+    font-size: 0.75em;
+  }
+  .nav-tabs-justified, .nav-tabs.nav-justified {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav-justified > li, .nav-tabs.nav-justified > li {
+    float: left;
+    font-size: 0.65em;
+  }
+  .nav-tabs-justified, .nav-tabs.nav-justified {
+    margin-left: 5%;
+  }
 }
