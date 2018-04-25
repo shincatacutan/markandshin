@@ -2193,6 +2193,10 @@ span.item-role {
 .fh5co-heading {
      margin-bottom: 1em; 
 }
+
+#fh5co-testimonial .wrap-testimony .testimony-slide blockquote{
+  font-size: 1em;
+}
 @media screen and (max-width: 375px) {
   .nav-justified > li, .nav-tabs.nav-justified > li {
     float: left;
