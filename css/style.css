@@ -2197,6 +2197,12 @@ span.item-role {
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote{
   font-size: 1em;
 }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 0.9em;
+}
+
 @media screen and (max-width: 375px) {
   .nav-justified > li, .nav-tabs.nav-justified > li {
     float: left;
