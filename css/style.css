@@ -927,16 +927,15 @@ form label {
   }
 
   .hashtag{
-     font-size: 18px !important;
+     font-size: 22px !important;
   }
 
   ul.nav.navbar-nav.navbar-right li a {
    font-size: 10px;
     padding: 1px;
     margin-top: 29px;
-    margin-left: 5px;
+    margin-left: 10px;
     display: inline-block;
-    width: 55px;
     text-align: center;
     float: left;
     border-radius: 0.5em;
@@ -2200,7 +2199,10 @@ span.item-role {
 
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 375px) {
