@@ -2147,6 +2147,51 @@ span.item-role {
     display: block;
 }
 
+.fh5co-heading {
+     margin-bottom: 1em; 
+}
+
+#fh5co-testimonial .wrap-testimony .testimony-slide blockquote{
+  font-size: 1em;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 0.8em;
+    font-family: "Titillium Web", Arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tab-content.card {
+    border: solid 1px #eee;
+    border-radius: 0 0 1em 1em;
+    min-height: 550px;
+    background-color: #fff;
+}
+
+ul.sponsors {
+    list-style: none;
+    font-family: Sacramento;
+    font-weight: normal;
+    font-size: 1.6em;
+    margin:0;
+    padding:0;
+}
+
+.right{
+   text-align: right;
+}
+
+.left{
+   text-align: left;
+}
+
+div#panel3 h3 {
+    color: #9f8455;
+}
+
+
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
     width: 60px;
@@ -2192,23 +2237,17 @@ span.item-role {
 
   .simply-countdown > .simply-section .simply-word {
     font-size: 10px;
-}
-}
-.fh5co-heading {
-     margin-bottom: 1em; 
+  }
+   
+  ul.sponsors {
+    font-size: 1em;
+  }
+
+  div#panel3 h3 {
+    font-size: 1.2em;
+  }
 }
 
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote{
-  font-size: 1em;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #fff;
-    font-size: 0.8em;
-    font-family: "Titillium Web", Arial;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 
 @media screen and (max-width: 375px) {
   .nav-justified > li, .nav-tabs.nav-justified > li {
@@ -2218,4 +2257,6 @@ span.item-role {
   .nav-tabs-justified, .nav-tabs.nav-justified {
     margin-left: 5%;
   }
+
+ 
 }
