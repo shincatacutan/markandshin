@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Titillium Web", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -65,7 +65,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Titillium Web", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -970,6 +970,7 @@ button.navbar-toggle {
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 #fh5co-header .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
@@ -1734,7 +1735,7 @@ button.navbar-toggle {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Titillium Web", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
@@ -2188,6 +2189,10 @@ span.item-role {
   .nav-tabs-justified, .nav-tabs.nav-justified {
     margin-left: 5%;
   }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 10px;
+}
 }
 .fh5co-heading {
      margin-bottom: 1em; 
@@ -2200,9 +2205,14 @@ span.item-role {
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
     font-size: 0.8em;
-    font-family: Lato;
+    font-family: "Titillium Web", Arial;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+img.avatar-pic{
+  height: 150px;
+  width: 150px;
 }
 
 @media screen and (max-width: 375px) {
