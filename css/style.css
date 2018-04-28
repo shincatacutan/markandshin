@@ -931,7 +931,7 @@ form label {
   }
 
   ul.nav.navbar-nav.navbar-right li a {
-   font-size: 10px;
+    font-size: 10px;
     padding: 1px;
     margin-top: 29px;
     margin-left: 10px;
@@ -2208,11 +2208,6 @@ span.item-role {
     font-family: "Titillium Web", Arial;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-img.avatar-pic{
-  height: 150px;
-  width: 150px;
 }
 
 @media screen and (max-width: 375px) {
